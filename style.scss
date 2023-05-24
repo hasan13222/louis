@@ -3,6 +3,16 @@
     font-family: luis;
     src: url(./font/Intrepid.ttf);
 }
+@font-face {
+    font-family: helvetica;
+    src: url(./font/Helvetica.ttf);
+}
+@font-face {
+    font-family: helvetica-light;
+    src: url(./font/helvetica-light.ttf);
+}
+  @import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
+
 *{
     margin: 0;
     padding: 0;
@@ -89,5 +99,36 @@ body{
     }
     .modal{
         display: none;
+    }
+}
+
+/*hero*/
+.hero{
+
+    background: url('./img/hero.jpg') no-repeat;
+    background-size: cover;
+    color: #ffffff;
+    padding-top: 361px;
+    padding-bottom: 24px;
+
+    h2{
+        font-family: sans-serif;
+        font-size: 22px;
+        margin-bottom: 35px;
+        text-transform: uppercase;
+      }
+    p{
+        font-size: 15px;
+        font-family: abel;
+        line-height: 29px;
+        margin-bottom: 20px;
+        max-width: 297px;
+        letter-spacing: 0.7px;
+      }
+    a{
+        color: white;
+        font-size: 55px;
+        border-bottom: 1px solid white;
+        font-family: 'Abel', sans-serif;
     }
 }
