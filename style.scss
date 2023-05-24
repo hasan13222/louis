@@ -1,0 +1,93 @@
+/*typography*/
+@font-face {
+    font-family: luis;
+    src: url(./font/Intrepid.ttf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.full-container {
+    width: 100%;
+}
+.container{
+    padding: 0 35px;
+}
+body{
+    color: #19110b;
+    font-family: luis, sans-serif;
+}
+
+/*header*/
+.header{
+    padding: 30px 0;
+    border-bottom: 1px solid #eae4e4;
+    .menu{
+        display: none;
+    }
+    &__inner{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        &__item{
+            &__mid{
+                img{
+                    width: 220px;
+                }
+            }
+           ul{
+            display: flex;
+            li{
+                font-size: 14px;
+            }
+            li i{
+                margin-right: 10px;
+                color: #595454;
+            }
+            li:first-child{
+                margin-right: 30px;
+            }
+           }
+        }
+    }
+
+}
+
+/*sub header*/
+.sub_header{
+    padding: 30px 0;
+    position: sticky;
+    top: 0;
+
+    &__inner{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        h1{
+            font-size: 14px;
+            font-weight: normal;
+            letter-spacing: 0.5px;
+          }
+          &__right{
+
+            .filter {
+                padding: 10px 18px;
+                border-radius: 25px;
+                background: transparent;
+                border: 1px solid #bbb9b9;
+              }
+          }
+    }
+    .modal{
+        display: none;
+    }
+}
