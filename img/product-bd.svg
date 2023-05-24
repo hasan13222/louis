@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 26.3.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 5800 5800" style="enable-background:new 0 0 5800 5800;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill-rule:evenodd;clip-rule:evenodd;fill:url(#Rectangle-Copy_00000107565838376667478780000002749696521043044530_);}
+	.st1{fill-rule:evenodd;clip-rule:evenodd;fill:url(#Rectangle_00000135682030425451402040000007773037370542311302_);}
+	.st2{fill-rule:evenodd;clip-rule:evenodd;fill:url(#Rectangle-Copy-2_00000023280470432028191570000000537042670693176247_);}
+</style>
+<linearGradient id="Rectangle-Copy_00000100358515987807814340000006858131943686249651_" gradientUnits="userSpaceOnUse" x1="7675.1768" y1="3441.3958" x2="7675.1768" y2="3440.3958" gradientTransform="matrix(5800 0 0 -5800 -44513124 19960096)">
+	<stop  offset="0" style="stop-color:#CCCACA"/>
+	<stop  offset="7.909302e-02" style="stop-color:#E1E0DF"/>
+	<stop  offset="0.4146" style="stop-color:#EAEAEA"/>
+	<stop  offset="0.7287" style="stop-color:#E8E5E5"/>
+	<stop  offset="0.811" style="stop-color:#F8F8F8"/>
+	<stop  offset="0.9993" style="stop-color:#F6F5F3"/>
+</linearGradient>
+<rect id="Rectangle-Copy" style="fill-rule:evenodd;clip-rule:evenodd;fill:url(#Rectangle-Copy_00000100358515987807814340000006858131943686249651_);" width="5800" height="5800"/>
+<radialGradient id="Rectangle_00000129198804457041413180000017602507551527264640_" cx="7673.3535" cy="3442.7917" r="1" gradientTransform="matrix(2900 0 0 -2900 -22252724 9984096)" gradientUnits="userSpaceOnUse">
+	<stop  offset="0" style="stop-color:#CCCBCB"/>
+	<stop  offset="1" style="stop-color:#DCDADA;stop-opacity:0"/>
+</radialGradient>
+<rect id="Rectangle" style="fill-rule:evenodd;clip-rule:evenodd;fill:url(#Rectangle_00000129198804457041413180000017602507551527264640_);" width="2900" height="5800"/>
+<radialGradient id="Rectangle-Copy-2_00000140732667278335792120000015286063242974915772_" cx="7678.6465" cy="3442.7917" r="1" gradientTransform="matrix(-2900 0 0 -2900 22273876 9984096)" gradientUnits="userSpaceOnUse">
+	<stop  offset="9.574223e-03" style="stop-color:#CCCACA"/>
+	<stop  offset="0.5474" style="stop-color:#DCDADA;stop-opacity:0"/>
+</radialGradient>
+<rect id="Rectangle-Copy-2" x="2900" style="fill-rule:evenodd;clip-rule:evenodd;fill:url(#Rectangle-Copy-2_00000140732667278335792120000015286063242974915772_);" width="2900" height="5800"/>
+</svg>
