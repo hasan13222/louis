@@ -106,10 +106,11 @@ a {
 /*hero*/
 .hero {
   background: url("./img/hero.jpg") no-repeat;
+  background-size: auto;
   background-size: cover;
   color: #ffffff;
-  padding-top: 361px;
-  padding-bottom: 24px;
+  padding-top: 435px;
+  padding-bottom: 45px;
 
   h2 {
     font-family: sans-serif;
@@ -127,9 +128,9 @@ a {
   }
   a {
     color: white;
-    font-size: 55px;
+    font-size: 16px;
     border-bottom: 1px solid white;
-    font-family: "Abel", sans-serif;
+    font-family: helvetica-light;
   }
 }
 /*Products */
