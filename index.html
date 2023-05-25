@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
     <!-- HEADER -->
     <header>
         <!-- main header -->
@@ -196,32 +197,100 @@
     <!-- product row-1 -->
     <div class="products full-container">
         <div class="products__inner container">
-            <div class="products__inner__single">
-                <div class="products__inner__single__img">
-                    <img src="./img/capucines-bb--M20844_PM1.png" alt="cpucines">
-                </div>
+            <!-- r1c1 -->
+            <div class="products__inner__single" data-code="r1c1">
+                <div class="bags active" data-code="r1c1p1">
+                    <div class="products__inner__single__img">
+                        <img src="./img/capucines-bb--M22055_PM2.png" alt="cpucines">
+                    </div>         
+                    <div class="products__inner__single__img">
+                        <img src="./img/capucines-bb--M22055.png" alt="cpucines">
+                    </div>         
+                    <div class="products__inner__single__img">
+                        <img src="./img/capucines-bb--M22055(1).png" alt="cpucines">
+                    </div>
+                    <div class="products__inner__single__img">
+                        <img src="./img/capucines-bb--M22055(2).png" alt="cpucines">
+                    </div>
+                </div> 
+                <div class="bags" data-code="r1c1p2">
+                    <div class="products__inner__single__img">
+                        <img src="./img/capucines-bb--M22054.png" alt="cpucines">
+                    </div>         
+                    <div class="products__inner__single__img">
+                        <img src="./img/capucines-bb--M22054(1).png" alt="cpucines">
+                    </div>         
+                    <div class="products__inner__single__img">
+                        <img src="./img/capucines-bb--M22054(2).png" alt="cpucines">
+                    </div>
+                    <div class="products__inner__single__img">
+                        <img src="./img/capucines-bb--M22054(3).png" alt="cpucines">
+                    </div>
+                </div>       
                 <div class="products__inner__single__details">
                     <h3>Capucines BB</h3>
-                    <div class="buttons">
-                        <i class="fa-solid fa-circle"></i>
-                        <i class="fa-solid fa-circle"></i>
+                    <div class="buttons" id="r1c1">
+                        <i class="fa-solid fa-circle active" data-code="r1c1p1"></i>
+                        <i class="fa-solid fa-circle" data-code="r1c1p2"></i>
                     </div>
                 </div>
+                <div class="products__inner__single__slider">
+                    <div class="prev" onclick="slide11Prev()">
+                        <i class="fa fa-thin fa-angle-left"></i>
+                    </div>
+                    <div class="next" onclick="slide11Next()">
+                        <i class="fa fa-thin fa-angle-right"></i>
+                    </div>
+                </div>         
             </div>
-            <div class="products__inner__single">
-                <div class="products__inner__single__img">
-                    <img src="./img/r1c2.png" alt="cpucines">
-                </div>
+
+            <!-- r1c2 -->
+            <div class="products__inner__single" data-code="r1c2">
+                <div class="bags active" data-code="r1c2p1">
+                    <div class="products__inner__single__img">
+                        <img src="./img/r1c2.png" alt="cpucines">
+                    </div>         
+                    <div class="products__inner__single__img">
+                        <img src="./img/r1c2(2).png" alt="cpucines">
+                    </div>         
+                    <div class="products__inner__single__img">
+                        <img src="./img/r1c2(3).png" alt="cpucines">
+                    </div>
+                </div> 
+                <div class="bags" data-code="r1c2p2">
+                    <div class="products__inner__single__img">
+                        <img src="./img/capucines-bb--M55832.png" alt="cpucines">
+                    </div>         
+                    <div class="products__inner__single__img">
+                        <img src="./img/capucines-bb--M55832(1).png" alt="cpucines">
+                    </div>         
+                    <div class="products__inner__single__img">
+                        <img src="./img/capucines-bb--M55832(2).png" alt="cpucines">
+                    </div>
+                    <div class="products__inner__single__img">
+                        <img src="./img/capucines-bb--M55832(3).png" alt="cpucines">
+                    </div>
+                    <div class="products__inner__single__img">
+                        <img src="./img/capucines-bb--M55832(4).png" alt="cpucines">
+                    </div>
+                </div>       
                 <div class="products__inner__single__details">
                     <h3>Capucines BB</h3>
-                    <div class="buttons">
-                        <i class="fa-solid fa-circle"></i>
-                        <i class="fa-solid fa-circle"></i>
-                        <i class="fa-solid fa-circle"></i>
-                        <a href="#">+3</a>
+                    <div class="buttons" id="r1c2">
+                        <i class="fa-solid fa-circle active" data-code="r1c2p1"></i>
+                        <i class="fa-solid fa-circle" data-code="r1c2p2"></i>
                     </div>
                 </div>
+                <div class="products__inner__single__slider">
+                    <div class="prev" onclick="slide12Prev()">
+                        <i class="fa fa-thin fa-angle-left"></i>
+                    </div>
+                    <div class="next" onclick="slide12Next()">
+                        <i class="fa fa-thin fa-angle-right"></i>
+                    </div>
+                </div>         
             </div>
+
             <div class="products__inner__single">
                 <div class="products__inner__single__img">
                     <img src="./img/r1c3.png" alt="cpucines">
@@ -382,5 +451,9 @@
     </div>
     
     <!-- End of FOOTER -->
+    <!-- js -->
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/owl.carousel.min.js"></script>
+    <script src="./js/custom.js"></script>
 </body>
 </html>
