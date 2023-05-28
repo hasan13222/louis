@@ -9,6 +9,8 @@
     <script src="https://kit.fontawesome.com/dac5c0dc0b.js" crossorigin="anonymous"></script>
     <!-- style.css -->
     <link rel="stylesheet" href="style.css">
+    <!-- responsive css -->
+    <link rel="stylesheet" href="responsive.css">
 </head>
 <body>
 
@@ -20,8 +22,8 @@
                 <div class="header__inner__left header__inner__item">
                     <div class="header__inner__item__left">
                         <ul>
-                            <li><i class="fa fa-thin fa-bars"></i> Menu</li>
-                            <li><i class="fa fa-thin fa-magnifying-glass"></i> Search</li>
+                            <li><i class="fa fa-thin fa-bars"></i> <span>Menu</span></li>
+                            <li><i class="fa fa-thin fa-magnifying-glass"></i> <span>Search</span></li>
                         </ul>
                     </div>
                 </div>
@@ -33,150 +35,285 @@
                 <div class="header__inner__right header__inner__item">
                     <div class="header__inner__item__right">
                         <ul>
-                            <li>Wishlist</li>
+                            <li><a href="#">Wishlist</a></li>
                             <li>My LV</li>
                         </ul>
                     </div>
                 </div>
             </div>
             <div class="menu modal">
-                <button><i class=" fa-light fa-xmark"></i> Close</button>
-                <ul class="main_menu">
-                    <li><a href="#">Louis Vuitton x Yayoi Kusama</a></li>
-                    <li><a href="#">Father's Day Gifts</a></li>
-                    <li><a href="#">New</a></li>
-                    <li><a href="#">Bags</a></li>
-                    <li><a href="#">Women</a></li>
-                    <li><a href="#">Men</a></li>
-                    <li><a href="#">Jewelry</a></li>
-                    <li><a href="#">Watches</a></li>
-                    <li><a href="#">Perfumes</a></li>
-                    <li><a href="#">Art of Living</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">World of Louis Vuitton</a></li>
-                </ul>
-                <ul class="sub_menu">
-                    <li><a href="#">Sustainability</a></li>
-                    <li><a href="#">Stores</a></li>
-                    <li><a href="#">ENGLISH (INTL)</a></li>
-                    <li><a href="#">Can we help you?</a></li>
-                </ul>
+                <div class="pos_fix">
+                    <div class="close">
+                        <button><i class="fa fa-thin fa-xmark"></i> Close</button>
+                    </div>
+                    <div class="menu_inner">
+                        <ul class="main_menu">
+                            <li><a href="#">Louis Vuitton x Yayoi Kusama</a></li>
+                            <li><a href="#">Father's Day Gifts</a></li>
+                            <li><a href="#">New</a></li>
+                            <li><a href="#">Bags</a></li>
+                            <li><a href="#">Women</a></li>
+                            <li><a href="#">Men</a></li>
+                            <li><a href="#">Jewelry</a></li>
+                            <li><a href="#">Watches</a></li>
+                            <li><a href="#">Perfumes</a></li>
+                            <li><a href="#">Art of Living</a></li>
+                            <li><a href="#">Services</a></li>
+                            <li><a href="#">World of Louis Vuitton</a></li>
+                        </ul>
+                        <ul class="sub_menu">
+                            <li><a href="#">Sustainability</a></li>
+                            <li><a href="#">Stores</a></li>
+                            <li><a href="#">ENGLISH (INTL)</a></li>
+                            <li><a href="#">Can we help you?</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- search box -->
+            <div class="search_page">
+                <div class="search_inner">
+                    <div class="search_inner__top">
+                        <div class="form">
+                            <button>
+                                <i class="fa fa-thin fa-magnifying-glass"></i>
+                            </button>
+                            <input placeholder="Search for 'Fathers's Day gifts' " type="text" name="search" id="">
+                        </div>
+                        <div class="close">
+                            <button>
+                                <i class="fa fa-thin fa-xmark"></i>
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <div class="search_inner__btm">
+                        <div class="search_inner__btm__single search_inner__btm__left">
+                            <div class="options">
+                                <div class="options_single">
+                                    <h3>Women</h3>
+                                    <ul>
+                                        <li><a href="#">Tops</a></li>
+                                        <li><a href="#">Iconic Shoes</a></li>
+                                        <li><a href="#">Phone Cases</a></li>
+                                        <li><a href="#">Swimwear</a></li>
+                                    </ul>
+                                </div>
+                                <div class="options_single">
+                                    <h3>Men</h3>
+                                    <ul>
+                                        <li><a href="#">All Bags</a></li>
+                                        <li><a href="#">Sneakers</a></li>
+                                        <li><a href="#">Landing Page 030</a></li>
+                                        <li><a href="#">Landing Page 029</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="posts">
+                                <h3>WORLD OF LOUIS VUITTON </h3>
+                                <div class="post">
+                                    <div class="thumb">
+                                        <img src="./img/post1.png" alt="thumb">
+                                    </div>
+                                    <div class="meta">
+                                        <h4>Espace Louis Vuitton Seoul Alex Katz</h4>
+                                        <p>12/07 - Arts & Culture</p>
+                                    </div>
+                                </div>
+                                <div class="post">
+                                    <div class="thumb">
+                                        <img src="./img/post2.png" alt="thumb">
+                                    </div>
+                                    <div class="meta">
+                                        <h4>Fashion Eye Buenos Aires by Sofia Sanchez and Mauro Mongiello</h4>
+                                        <p>11/24 - Arts & Culture</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="search_inner__btm__single search_inner__btm__right">
+                            <h3>PRODUCTS </h3>
+                            <div class="products">
+                                <div class="product">
+                                    <div class="thumb">
+                                        <img src="./img/product1.png" alt="product image">
+                                    </div>
+                                    <h4>L'Immensité</h4>
+                                </div>
+                                <div class="product">
+                                    <div class="thumb">
+                                        <img src="./img/product2.png" alt="product image">
+                                    </div>
+                                    <h4>LV Signature Round Sunglasses - Size S</h4>
+                                </div>
+                                <div class="product">
+                                    <div class="thumb">
+                                        <img src="./img/product3.png" alt="product image">
+                                    </div>
+                                    <h4>Fastline Messenger</h4>
+                                </div>
+                                <div class="product">
+                                    <div class="thumb">
+                                        <img src="./img/product4.png" alt="product image">
+                                    </div>
+                                    <h4>Multiple Wallet</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <!-- My Lv -->
+            <div class="lv r_menu">
+                <div class="lv_inner r_menu_inner">
+                    <div class="rtp filter_menu__top">
+                        <div class="rtp_single filter_menu__top__left">
+                            <h4>Identification</h4>
+                        </div>
+                        <div class="rtp_single filter_menu__top__right">
+                            <i class="fa fa-sharp fa-xmark"></i>
+                        </div>
+                    </div>
+                    <div class="lv_body">
+                        <h4>I already have an account </h4>
+                        <form action="#">
+                            <label for="email">Login*</label><br>
+                            <input type="email" name="email" id=""><br>
+                            <label for="password">Password</label><br>
+                            <input type="password" name="password" id=""><br>
+                            <a href="#">Forgot your password?</a>
+                            <input type="submit" value="Sign in">
+                        </form>                    
+                    </div>
+                    <div class="lv_btm">
+                        <h4>I don't have an account </h4>
+                        <p>Enjoy added benefits and a richer experience by creating a personal account</p>
+                        <button>Create My LV Account</button>
+                    </div>
+                </div>
+            </div>
+            <!-- filter box -->
+            <div class="filter_menu modal r_menu">
+                <div class="r_menu_inner filter_menu_inner">
+                    <div class="rtp filter_menu__top">
+                        <div class="rtp_single filter_menu__top__left">
+                            <h4>SHOW FILTERS</h4>
+                        </div>
+                        <div class="rtp_single filter_menu__top__right">
+                            <i class="fa-sharp fa fa-xmark"></i>
+                        </div>
+                    </div>
+                    <div class="filter_body">
+                        <div class="filter_menu__mid">
+                            <div class="filter_menu__mid__top">
+                                <div class="filter_menu__mid__top__left">
+                                    <h5>COLORS</h5>
+                                </div>
+                                <div class="filter_menu__mid__top__right">
+                                    <i class="fa fa-light fa-angle-up"></i>
+                                </div>
+                            </div>
+                            <div class="filter_menu__mid__btm">
+                                <div class="filter_menu__mid__btm__row">
+                                    <div class="filter_menu__mid__btm__row__item">
+                                        <div class="img_wrapper">
+                                            <img src="./img/black.png" alt="black">
+                                        </div>
+                                        <h6>Black</h6>
+                                    </div>
+                                    <div class="filter_menu__mid__btm__row__item">
+                                        <div class="img_wrapper">
+                                            <img src="./img/brown.png" alt="brown">
+                                        </div>
+                                        <h6>brown</h6>
+                                    </div>
+                                    <div class="filter_menu__mid__btm__row__item">
+                                        <div class="img_wrapper">
+                                            <img src="./img/white.png" alt="white">
+                                        </div>
+                                        <h6>white</h6>
+                                    </div>
+                                    <div class="filter_menu__mid__btm__row__item filter_menu__mid__btm__row__item--disable">
+                                        <div class="img_wrapper">
+                                            <img src="./img/natural.png" alt="natural">
+                                        </div>
+                                        <h6>Natural</h6>
+                                    </div>
+                                </div>
+                                <div class="filter_menu__mid__btm__row">
+                                   <div class="filter_menu__mid__btm__row__item">
+                                        <div class="img_wrapper">
+                                            <img src="./img/beige.png" alt="beige">
+                                        </div>
+                                        <h6>beige</h6>  
+                                   </div>
+                                   <div class="filter_menu__mid__btm__row__item">
+                                        <div class="img_wrapper">
+                                            <img src="./img/yellow.png" alt="yellow">
+                                        </div>
+                                        <h6>yellow</h6> 
+                                   </div>
+                                   <div class="filter_menu__mid__btm__row__item">
+                                        <div class="img_wrapper">
+                                            <img src="./img/orange.png" alt="orange">
+                                        </div>
+                                        <h6>orange</h6> 
+                                   </div>
+                                   <div class="filter_menu__mid__btm__row__item">
+                                        <div class="img_wrapper">
+                                            <img src="./img/red.png" alt="red">
+                                        </div>
+                                        <h6>red</h6>
+                                   </div>
+                                </div>
+                                <div class="filter_menu__mid__btm__row">
+                                    <div class="filter_menu__mid__btm__row__item">
+                                        <div class="img_wrapper">
+                                            <img src="./img/pink.png" alt="pink">
+                                        </div>
+                                        <h6>pink</h6>
+                                    </div>
+                                    <div class="filter_menu__mid__btm__row__item">
+                                        <div class="img_wrapper">
+                                            <img src="./img/purple.png" alt="purple">
+                                        </div>
+                                        <h6>purple</h6>
+                                    </div>
+                                    <div class="filter_menu__mid__btm__row__item">
+                                        <div class="img_wrapper">
+                                            <img src="./img/blue.png" alt="blue">
+                                        </div>
+                                        <h6>blue</h6>
+                                    </div>
+                                    <div class="filter_menu__mid__btm__row__item">
+                                        <div class="img_wrapper">
+                                            <img src="./img/green.png" alt="green">
+                                        </div>
+                                        <h6>green</h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="filter_menu__btm">
+                            <button>Show <span>38</span> Products</button>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
 
         <!-- header bottom -->
         <div class="sub_header full-container">
             <div class="sub_header__inner container">
-                <div class="sub_header__inner_left">
+                <div class="sub_header__inner__left">
                     <h1>Capucines </h1>
                 </div>
-                <div class="sub_header__inner_right">
+                <div class="sub_header__inner__right">
                     <button class="filter">
-                        Filters <i class="fa-light fa-sliders-simple"></i>
-                    </button>
-                </div>
-            </div>
-            <div class="filter_menu modal">
-                <div class="filter_menu__top">
-                    <div class="filter_menu__top__left">
-                        <h4>SHOW FILTERS</h4>
-                    </div>
-                    <div class="filter_menu__top__right">
-                        <i class="fa-sharp fa fa-regular fa-xmark"></i>
-                    </div>
-                </div>
-                <div class="filter_menu__mid">
-                    <div class="filter_menu__mid__top">
-                        <div class="filter_menu__mid__top__left">
-                            <h5>COLORS</h5>
-                        </div>
-                        <div class="filter_menu__mid__top__right">
-                            <i class=" fa-regular fa-chevron-up"></i>
-                        </div>
-                    </div>
-                    <div class="filter_menu__mid__btm">
-                        <div class="filter_menu__mid__btm__row">
-                            <div class="filter_menu__mid__btm__row__item">
-                                <div class="img_wrapper">
-                                    <img src="./img/black.png" alt="black">
-                                </div>
-                                <h6>Black</h6>
-                            </div>
-                            <div class="filter_menu__mid__btm__row__item">
-                                <div class="img_wrapper">
-                                    <img src="./img/brown.png" alt="brown">
-                                </div>
-                                <h6>brown</h6>
-                            </div>
-                            <div class="filter_menu__mid__btm__row__item">
-                                <div class="img_wrapper">
-                                    <img src="./img/white.png" alt="white">
-                                </div>
-                                <h6>white</h6>
-                            </div>
-                            <div class="filter_menu__mid__btm__row__item filter_menu__mid__btm__row__item--disable">
-                                <div class="img_wrapper">
-                                    <img src="./img/natural.png" alt="natural">
-                                </div>
-                                <h6>Natural</h6>
-                            </div>
-                        </div>
-                        <div class="filter_menu__mid__btm__row">
-                           <div class="filter_menu__mid__btm__row__item">
-                                <div class="img_wrapper">
-                                    <img src="./img/beige.png" alt="beige">
-                                </div>
-                                <h6>beige</h6>  
-                           </div>
-                           <div class="filter_menu__mid__btm__row__item">
-                                <div class="img_wrapper">
-                                    <img src="./img/yellow.png" alt="yellow">
-                                </div>
-                                <h6>yellow</h6> 
-                           </div>
-                           <div class="filter_menu__mid__btm__row__item">
-                                <div class="img_wrapper">
-                                    <img src="./img/orange.png" alt="orange">
-                                </div>
-                                <h6>orange</h6> 
-                           </div>
-                           <div class="filter_menu__mid__btm__row__item">
-                                <div class="img_wrapper">
-                                    <img src="./img/red.png" alt="red">
-                                </div>
-                                <h6>red</h6>
-                           </div>
-                        </div>
-                        <div class="filter_menu__mid__btm__row">
-                            <div class="filter_menu__mid__btm__row__item">
-                                <div class="img_wrapper">
-                                    <img src="./img/pink.png" alt="pink">
-                                </div>
-                                <h6>pink</h6>
-                            </div>
-                            <div class="filter_menu__mid__btm__row__item">
-                                <div class="img_wrapper">
-                                    <img src="./img/purple.png" alt="purple">
-                                </div>
-                                <h6>purple</h6>
-                            </div>
-                            <div class="filter_menu__mid__btm__row__item">
-                                <div class="img_wrapper">
-                                    <img src="./img/blue.png" alt="blue">
-                                </div>
-                                <h6>blue</h6>
-                            </div>
-                            <div class="filter_menu__mid__btm__row__item">
-                                <div class="img_wrapper">
-                                    <img src="./img/green.png" alt="green">
-                                </div>
-                                <h6>green</h6>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="filter_menu__btm">
-                    <button>Show <span>38</span> Products</button>
+                        <span>Filters</span>                   
+                        <img src="./img/filter-icon.png" alt="icon">
+                    </button>                    
                 </div>
             </div>
         </div>
@@ -230,8 +367,8 @@
                 <div class="products__inner__single__details">
                     <h3>Capucines BB</h3>
                     <div class="buttons" id="r1c1">
-                        <i class="fa-solid fa-circle active" data-code="r1c1p1"></i>
-                        <i class="fa-solid fa-circle" data-code="r1c1p2"></i>
+                        <i class="fa-solid fa-circle active" data-code="r1c1p1" style="color: blue;"></i>
+                        <i class="fa-solid fa-circle" data-code="r1c1p2" style="color: white;"></i>
                     </div>
                 </div>
                 <div class="products__inner__single__slider">
@@ -248,10 +385,10 @@
             <div class="products__inner__single" data-code="r1c2">
                 <div class="bags active" data-code="r1c2p1">
                     <div class="products__inner__single__img">
-                        <img src="./img/r1c2.png" alt="cpucines">
+                        <img src="./img/r1c2(2).png" alt="cpucines">
                     </div>         
                     <div class="products__inner__single__img">
-                        <img src="./img/r1c2(2).png" alt="cpucines">
+                        <img src="./img/r1c2.png" alt="cpucines">
                     </div>         
                     <div class="products__inner__single__img">
                         <img src="./img/r1c2(3).png" alt="cpucines">
@@ -274,11 +411,24 @@
                         <img src="./img/capucines-bb--M55832(4).png" alt="cpucines">
                     </div>
                 </div>       
+                <div class="bags" data-code="r1c2p3">
+                    <div class="products__inner__single__img">
+                        <img src="./img/capucines-bb--M94634.png" alt="cpucines">
+                    </div>         
+                    <div class="products__inner__single__img">
+                        <img src="./img/capucines-bb--M94634(1).png" alt="cpucines">
+                    </div>         
+                    <div class="products__inner__single__img">
+                        <img src="./img/capucines-bb--M94634(2).png" alt="cpucines">
+                    </div>
+                </div>       
                 <div class="products__inner__single__details">
                     <h3>Capucines BB</h3>
                     <div class="buttons" id="r1c2">
-                        <i class="fa-solid fa-circle active" data-code="r1c2p1"></i>
-                        <i class="fa-solid fa-circle" data-code="r1c2p2"></i>
+                        <i class="fa-solid fa-circle active" data-code="r1c2p1" style="color: darkgreen;"></i>
+                        <i class="fa-solid fa-circle" data-code="r1c2p2" style="color: white;"></i>
+                        <i class="fa-solid fa-circle" data-code="r1c2p3" style="color: gray;"></i>
+                        <a href="#">+3</a>
                     </div>
                 </div>
                 <div class="products__inner__single__slider">
@@ -291,91 +441,454 @@
                 </div>         
             </div>
 
-            <div class="products__inner__single">
-                <div class="products__inner__single__img">
-                    <img src="./img/r1c3.png" alt="cpucines">
-                </div>
+            <!-- r1c3 -->
+            <div class="products__inner__single" data-code="r1c3">                
+                <div class="bags active" data-code="r1c3p1">
+                    <div class="products__inner__single__img">
+                        <img src="./img/capucines-mm--M42259_PM2.png" alt="cpucines">
+                    </div>       
+                    <div class="products__inner__single__img">
+                        <img src="./img/capucines-mm--M42259(1).png" alt="cpucines">
+                    </div>
+                    <div class="products__inner__single__img">
+                        <img src="./img/capucines-mm--M42259(2).png" alt="cpucines">
+                    </div>
+                </div>    
+                <div class="bags" data-code="r1c3p2">
+                    <div class="products__inner__single__img">
+                        <img src="./img/capucines-mm--M42253.png" alt="cpucines">
+                    </div>         
+                    <div class="products__inner__single__img">
+                        <img src="./img/r1c3(2).png" alt="cpucines">
+                    </div>         
+                    <div class="products__inner__single__img">
+                        <img src="./img/capucines-mm--M42253(1).png" alt="cpucines">
+                    </div>
+                    <div class="products__inner__single__img">
+                        <img src="./img/capucines-mm--M42253(2).png" alt="cpucines">
+                    </div>
+                </div>    
+                <div class="bags" data-code="r1c3p3">
+                    <div class="products__inner__single__img">
+                        <img src="./img/capucines-bb--M94634.png" alt="cpucines">
+                    </div>         
+                    <div class="products__inner__single__img">
+                        <img src="./img/capucines-bb--M94634(1).png" alt="cpucines">
+                    </div>         
+                    <div class="products__inner__single__img">
+                        <img src="./img/capucines-bb--M94634(2).png" alt="cpucines">
+                    </div>
+                </div>       
                 <div class="products__inner__single__details">
                     <h3>Capucines BB</h3>
-                    <div class="buttons">
-                        <i class="fa-solid fa-circle"></i>
-                        <i class="fa-solid fa-circle"></i>
-                        <i class="fa-solid fa-circle"></i>
+                    <div class="buttons" id="r1c3">
+                        <i class="fa-solid fa-circle active" data-code="r1c3p1" style="color: black;"></i>
+                        <i class="fa-solid fa-circle" data-code="r1c3p2" style="color: pink;"></i>
+                        <i class="fa-solid fa-circle" data-code="r1c3p3" style="color:burlywood"></i>
                     </div>
                 </div>
+                <div class="products__inner__single__slider">
+                    <div class="prev" onclick="slide13Prev()">
+                        <i class="fa fa-thin fa-angle-left"></i>
+                    </div>
+                    <div class="next" onclick="slide13Next()">
+                        <i class="fa fa-thin fa-angle-right"></i>
+                    </div>
+                </div>         
             </div>
-            <div class="products__inner__single">
-                <div class="products__inner__single__img">
-                    <img src="./img/capucines-bb--M22054.png" alt="cpucines">
-                </div>
-                <div class="products__inner__single__details">
-                    <h3>Capucines BB</h3>
-                    <div class="buttons">
-                        <i class="fa-solid fa-circle"></i>
-                        <i class="fa-solid fa-circle"></i>
+            
+            <!-- r1c4 -->
+            <div class="products__inner__single" data-code="r1c4">                      
+                <div class="bags active" data-code="r1c4p1">
+                    <div class="products__inner__single__img">
+                        <img src="./img/capucines-bb--M22054.png" alt="cpucines">
+                    </div>       
+                    <div class="products__inner__single__img">
+                        <img src="./img/capucines-bb--M22054(1).png" alt="cpucines">
+                    </div>
+                    <div class="products__inner__single__img">
+                        <img src="./img/capucines-bb--M22054(2).png" alt="cpucines">
+                    </div>
+                    <div class="products__inner__single__img">
+                        <img src="./img/capucines-bb--M22054(3).png" alt="cpucines">
                     </div>
                 </div>
+                <div class="bags" data-code="r1c4p2">
+                    <div class="products__inner__single__img">
+                        <img src="./img/capucines-bb--M22055_PM2.png" alt="cpucines">
+                    </div>
+                    <div class="products__inner__single__img">
+                        <img src="./img/capucines-bb--M22055.png" alt="cpucines">
+                    </div>
+                    <div class="products__inner__single__img">
+                        <img src="./img/capucines-bb--M22055(1).png" alt="cpucines">
+                    </div>
+                    <div class="products__inner__single__img">
+                        <img src="./img/capucines-bb--M22055(2).png" alt="cpucines">
+                    </div>
+                </div>  
+                <div class="products__inner__single__details">
+                    <h3>Capucines BB</h3>
+                    <div class="buttons" id="r1c4">
+                        <i class="fa-solid fa-circle active" data-code="r1c4p1" style="color: white;"></i>
+                        <i class="fa-solid fa-circle" data-code="r1c4p2" style="color: blue;"></i>
+                    </div>
+                </div>
+                <div class="products__inner__single__slider">
+                    <div class="prev" onclick="slide14Prev()">
+                        <i class="fa fa-thin fa-angle-left"></i>
+                    </div>
+                    <div class="next" onclick="slide14Next()">
+                        <i class="fa fa-thin fa-angle-right"></i>
+                    </div>
+                </div>         
             </div>
         </div>
     </div>
 
+
     <!-- product row-2 -->
     <div class="products full-container">
         <div class="products__inner container">
-            <div class="products__inner__single">
-                <div class="products__inner__single__img">
-                    <img src="./img/capucines-bb--M20844_PM1.png" alt="cpucines">
+            <!-- r2c1 -->
+            <div class="products__inner__single" data-code="r2c1">                      
+                <div class="bags active" data-code="r2c1p1">
+                    <div class="products__inner__single__img">
+                        <img src="./img/capucines-mini--M56669_PM2.png" alt="cpucines">
+                    </div>       
+                    <div class="products__inner__single__img">
+                        <img src="./img/capucines-mini--M56669_PM1.png" alt="cpucines">
+                    </div>
+                    <div class="products__inner__single__img">
+                        <img src="./img/capucines-mini--M56669_PM1(2).png" alt="cpucines">
+                    </div>
+                    <div class="products__inner__single__img">
+                        <img src="./img/capucines-mini--M56669_PM1(3).png" alt="cpucines">
+                    </div>
                 </div>
                 <div class="products__inner__single__details">
                     <h3>Capucines BB</h3>
-                    <div class="buttons">
-                        <i class="fa-solid fa-circle"></i>
-                        <i class="fa-solid fa-circle"></i>
+                    <div class="buttons" id="r2c1" style="display: none;">
+                        <i class="fa-solid fa-circle active" data-code="r2c1p1" style="color: white;"></i>
+                        <i class="fa-solid fa-circle" data-code="r2c1p2" style="color: blue;"></i>
                     </div>
                 </div>
+                <div class="products__inner__single__slider">
+                    <div class="prev" onclick="slide21Prev()">
+                        <i class="fa fa-thin fa-angle-left"></i>
+                    </div>
+                    <div class="next" onclick="slide21Next()">
+                        <i class="fa fa-thin fa-angle-right"></i>
+                    </div>
+                </div>         
             </div>
-            <div class="products__inner__single">
-                <div class="products__inner__single__img">
-                    <img src="./img/r1c2.png" alt="cpucines">
+
+            <!-- r2c2 -->
+            
+            <div class="products__inner__single" data-code="r2c2">                      
+                <div class="bags active" data-code="r2c2p1">
+                    <div class="products__inner__single__img">
+                        <img src="./img/capucines-mini--M22606_PM2.png" alt="cpucines">
+                    </div>       
+                    <div class="products__inner__single__img">
+                        <img src="./img/capucines-mini--M22606_PM1.png" alt="cpucines">
+                    </div>
+                    <div class="products__inner__single__img">
+                        <img src="./img/capucines-mini--M22606_PM1(2).png" alt="cpucines">
+                    </div>
+                    <div class="products__inner__single__img">
+                        <img src="./img/capucines-mini--M22606_PM1(3).png" alt="cpucines">
+                    </div>
                 </div>
                 <div class="products__inner__single__details">
                     <h3>Capucines BB</h3>
-                    <div class="buttons">
-                        <i class="fa-solid fa-circle"></i>
-                        <i class="fa-solid fa-circle"></i>
-                        <i class="fa-solid fa-circle"></i>
-                        <a href="#">+3</a>
+                    <div class="buttons" id="r2c2" style="display: none;">
+                        <i class="fa-solid fa-circle active" data-code="r2c2p1" style="color: white;"></i>
+                        <i class="fa-solid fa-circle" data-code="r2c2p2" style="color: blue;"></i>
                     </div>
                 </div>
+                <div class="products__inner__single__slider">
+                    <div class="prev" onclick="slide22Prev()">
+                        <i class="fa fa-thin fa-angle-left"></i>
+                    </div>
+                    <div class="next" onclick="slide22Next()">
+                        <i class="fa fa-thin fa-angle-right"></i>
+                    </div>
+                </div>         
             </div>
-            <div class="products__inner__single">
-                <div class="products__inner__single__img">
-                    <img src="./img/r1c3.png" alt="cpucines">
+
+            <!-- r2c3 -->
+            <div class="products__inner__single" data-code="r2c3">                      
+                <div class="bags active" data-code="r2c3p1">
+                    <div class="products__inner__single__img">
+                        <img src="./img/capucines-bb--M21690_PM2.png" alt="cpucines">
+                    </div>       
+                    <div class="products__inner__single__img">
+                        <img src="./img/capucines-bb--M21690_PM1.png" alt="cpucines">
+                    </div>
+                    <div class="products__inner__single__img">
+                        <img src="./img/capucines-bb--M21690_PM1(2).png" alt="cpucines">
+                    </div>
                 </div>
                 <div class="products__inner__single__details">
                     <h3>Capucines BB</h3>
-                    <div class="buttons">
-                        <i class="fa-solid fa-circle"></i>
-                        <i class="fa-solid fa-circle"></i>
-                        <i class="fa-solid fa-circle"></i>
+                    <div class="buttons" id="r2c3" style="display: none;">
+                        <i class="fa-solid fa-circle active" data-code="r2c3p1" style="color: white;"></i>
+                        <i class="fa-solid fa-circle" data-code="r2c3p2" style="color: blue;"></i>
                     </div>
                 </div>
+                <div class="products__inner__single__slider">
+                    <div class="prev" onclick="slide23Prev()">
+                        <i class="fa fa-thin fa-angle-left"></i>
+                    </div>
+                    <div class="next" onclick="slide23Next()">
+                        <i class="fa fa-thin fa-angle-right"></i>
+                    </div>
+                </div>         
             </div>
+
+            <!-- r2c4 -->
             <div class="products__inner__single">
                 <div class="products__inner__single__img">
-                    <img src="./img/capucines-bb--M22054.png" alt="cpucines">
-                </div>
-                <div class="products__inner__single__details">
-                    <h3>Capucines BB</h3>
-                    <div class="buttons">
-                        <i class="fa-solid fa-circle"></i>
-                        <i class="fa-solid fa-circle"></i>
-                    </div>
+                    <video id="vid" controls loop autoplay muted>
+                        <source src="./video/promo.mp4">
+                    </video>
                 </div>
             </div>
         </div>
     </div>
-    <!-- end of product row -->
+    <!-- end of product row 2 -->
+
+
+   
+
+
+
+    <!-- product row 3 -->
+    <div class="products full-container">
+        <div class="products__inner container">
+            <!-- r3c1 -->
+            <div class="products__inner__single" data-code="r3c1">                      
+                <div class="bags active" data-code="r3c1p1">
+                    <div class="products__inner__single__img">
+                        <img src="./img/capucines-bb--M94755_PM1(2).png" alt="cpucines">
+                    </div>
+                    <div class="products__inner__single__img">
+                        <img src="./img/capucines-bb--M94755_PM1.png" alt="cpucines">
+                    </div>
+                    <div class="products__inner__single__img">
+                        <img src="./img/capucines-bb--M94755_PM1(3).png" alt="cpucines">
+                    </div>
+                    <div class="products__inner__single__img">
+                        <img src="./img/capucines-bb--M94755_PM1(4).png" alt="cpucines">
+                    </div> 
+                </div>
+                <div class="products__inner__single__details">
+                    <h3>Capucines BB</h3>
+                    <div class="buttons" id="r3c1" style="display: none;">
+                        <i class="fa-solid fa-circle active" data-code="r3c1p1" style="color: white;"></i>
+                        <i class="fa-solid fa-circle" data-code="r3c1p2" style="color: blue;"></i>
+                    </div>
+                </div>
+                <div class="products__inner__single__slider">
+                    <div class="prev" onclick="slide31Prev()">
+                        <i class="fa fa-thin fa-angle-left"></i>
+                    </div>
+                    <div class="next" onclick="slide31Next()">
+                        <i class="fa fa-thin fa-angle-right"></i>
+                    </div>
+                </div>         
+            </div>
+
+            <!-- r3c2 -->
+            
+            <div class="products__inner__single" data-code="r3c2">                      
+                <div class="bags active" data-code="r3c2p1">
+                    <div class="products__inner__single__img">
+                        <img src="./img/capucines-mini--M21798_PM1.png" alt="cpucines">
+                    </div>  
+                    <div class="products__inner__single__img">
+                        <img src="./img/capucines-mini--M21798_PM2.png" alt="cpucines">
+                    </div>  
+                    <div class="products__inner__single__img">
+                        <img src="./img/capucines-mini--M21798_PM1(2).png" alt="cpucines">
+                    </div>  
+                    <div class="products__inner__single__img">
+                        <img src="./img/capucines-mini--M21798_PM1(3).png" alt="cpucines">
+                    </div>  
+                </div>
+                <div class="products__inner__single__details">
+                    <h3>Capucines BB</h3>
+                    <div class="buttons" id="r3c2" style="display: none;">
+                        <i class="fa-solid fa-circle active" data-code="r3c2p1" style="color: white;"></i>
+                        <i class="fa-solid fa-circle" data-code="r3c2p2" style="color: blue;"></i>
+                    </div>
+                </div>
+                <div class="products__inner__single__slider">
+                    <div class="prev" onclick="slide32Prev()">
+                        <i class="fa fa-thin fa-angle-left"></i>
+                    </div>
+                    <div class="next" onclick="slide32Next()">
+                        <i class="fa fa-thin fa-angle-right"></i>
+                    </div>
+                </div>         
+            </div>
+
+            <!-- r3c3 -->
+            <div class="products__inner__single" data-code="r3c3">                      
+                <div class="bags active" data-code="r3c3p1">
+                    <div class="products__inner__single__img">
+                        <img src="./img/capucines-mini--M22375_PM1.png" alt="cpucines">
+                    </div>
+                    <div class="products__inner__single__img">
+                        <img src="./img/capucines-mini--M22375_PM2.png" alt="cpucines">
+                    </div>
+                    <div class="products__inner__single__img">
+                        <img src="./img/capucines-mini--M22375_PM1(2).png" alt="cpucines">
+                    </div>
+                    <div class="products__inner__single__img">
+                        <img src="./img/capucines-mini--M22375_PM1(3).png" alt="cpucines">
+                    </div>
+                </div>
+                <div class="products__inner__single__details">
+                    <h3>Capucines BB</h3>
+                    <div class="buttons" id="r3c3" style="display: none;">
+                        <i class="fa-solid fa-circle active" data-code="r3c3p1" style="color: white;"></i>
+                        <i class="fa-solid fa-circle" data-code="r3c3p2" style="color: blue;"></i>
+                    </div>
+                </div>
+                <div class="products__inner__single__slider">
+                    <div class="prev" onclick="slide33Prev()">
+                        <i class="fa fa-thin fa-angle-left"></i>
+                    </div>
+                    <div class="next" onclick="slide33Next()">
+                        <i class="fa fa-thin fa-angle-right"></i>
+                    </div>
+                </div>         
+            </div>
+
+            <!-- r3c4 -->
+            <div class="products__inner__single" data-code="r3c4">                      
+                <div class="bags active" data-code="r3c4p1">
+                    <div class="products__inner__single__img">
+                        <img src="./img/capucines-mini--N98477_PM1.png" alt="cpucines">
+                    </div>
+                    <div class="products__inner__single__img">
+                        <img src="./img/capucines-mini--N98477_PM2.png" alt="cpucines">
+                    </div>
+                    <div class="products__inner__single__img">
+                        <img src="./img/capucines-mini--N98477_PM1(2).png" alt="cpucines">
+                    </div>
+                    <div class="products__inner__single__img">
+                        <img src="./img/capucines-mini--N98477_PM1(3).png" alt="cpucines">
+                    </div>
+                </div>
+                <div class="products__inner__single__details">
+                    <h3>Capucines BB</h3>
+                    <div class="buttons" id="r3c4" style="display: none;">
+                        <i class="fa-solid fa-circle active" data-code="r3c4p1" style="color: white;"></i>
+                        <i class="fa-solid fa-circle" data-code="r3c4p2" style="color: blue;"></i>
+                    </div>
+                </div>
+                <div class="products__inner__single__slider">
+                    <div class="prev" onclick="slide34Prev()">
+                        <i class="fa fa-thin fa-angle-left"></i>
+                    </div>
+                    <div class="next" onclick="slide34Next()">
+                        <i class="fa fa-thin fa-angle-right"></i>
+                    </div>
+                </div>         
+            </div>
+        </div>
+    </div>
+<!-- end of product row 3 -->
+
+
+    <!-- product row 4 -->
+    <div class="products full-container">
+        <div class="products__inner container">
+            <!-- r4c1 -->
+            <div class="products__inner__single" data-code="r4c1">                      
+                <div class="bags active" data-code="r4c1p1">
+                    <div class="products__inner__single__img">
+                        <img src="./img/capucines-mini--M56071_PM2.png" alt="cpucines">
+                    </div>  
+                    <div class="products__inner__single__img">
+                        <img src="./img/capucines-mini--M56071_PM1.png" alt="cpucines">
+                    </div>  
+                    <div class="products__inner__single__img">
+                        <img src="./img/capucines-mini--M56071_PM1(2).png" alt="cpucines">
+                    </div>  
+                    <div class="products__inner__single__img">
+                        <img src="./img/capucines-mini--M56071_PM1(3).png" alt="cpucines">
+                    </div>
+                </div>
+                <div class="products__inner__single__details">
+                    <h3>Capucines BB</h3>
+                    <div class="buttons" id="r4c1" style="display: none;">
+                        <i class="fa-solid fa-circle active" data-code="r4c1p1" style="color: white;"></i>
+                        <i class="fa-solid fa-circle" data-code="r4c1p2" style="color: blue;"></i>
+                    </div>
+                </div>
+                <div class="products__inner__single__slider">
+                    <div class="prev" onclick="slide41Prev()">
+                        <i class="fa fa-thin fa-angle-left"></i>
+                    </div>
+                    <div class="next" onclick="slide41Next()">
+                        <i class="fa fa-thin fa-angle-right"></i>
+                    </div>
+                </div>         
+            </div>
+
+            <!-- r4c2 -->
+            
+            <div class="products__inner__single" data-code="r4c2">                      
+                <div class="bags active" data-code="r4c2p1">
+                    <div class="products__inner__single__img">
+                        <img src="./img/capucines-mm--M20704_PM2.png" alt="cpucines">
+                    </div>  
+                    <div class="products__inner__single__img">
+                        <img src="./img/capucines-mm--M20704_PM1.png" alt="cpucines">
+                    </div>  
+                    <div class="products__inner__single__img">
+                        <img src="./img/capucines-mm--M20704_PM1(2).png" alt="cpucines">
+                    </div>  
+                    <div class="products__inner__single__img">
+                        <img src="./img/capucines-mm--M20704_PM1(3).png" alt="cpucines">
+                    </div>  
+                </div>
+                <div class="products__inner__single__details">
+                    <h3>Capucines BB</h3>
+                    <div class="buttons" id="r4c2" style="display: none;">
+                        <i class="fa-solid fa-circle active" data-code="r4c2p1" style="color: white;"></i>
+                        <i class="fa-solid fa-circle" data-code="r4c2p2" style="color: blue;"></i>
+                    </div>
+                </div>
+                <div class="products__inner__single__slider">
+                    <div class="prev" onclick="slide42Prev()">
+                        <i class="fa fa-thin fa-angle-left"></i>
+                    </div>
+                    <div class="next" onclick="slide42Next()">
+                        <i class="fa fa-thin fa-angle-right"></i>
+                    </div>
+                </div>         
+            </div>
+
+            <!-- r3c3 -->
+            <div class="products__inner__single hidden" data-code="r3c3">                      
+                       
+            </div>
+
+            <!-- r3c4 -->
+            <div class="products__inner__single hidden" data-code="r3c4">                      
+                       
+            </div>
+        </div>
+    </div>
+<!-- end of product row 4 -->
+
+
+
 
     <!-- product bottom -->
     <div class="pro_btm full-container">
@@ -452,8 +965,6 @@
     
     <!-- End of FOOTER -->
     <!-- js -->
-    <script src="./js/jquery.min.js"></script>
-    <script src="./js/owl.carousel.min.js"></script>
     <script src="./js/custom.js"></script>
 </body>
 </html>

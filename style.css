@@ -1,4 +1,5 @@
-/*typography*/
+/*================typography======================*/
+
 @import url("https://fonts.googleapis.com/css2?family=Abel&display=swap");
 @font-face {
   font-family: luis;
@@ -43,13 +44,343 @@ a {
   color: #19110b;
 }
 
-/*header*/
+button:hover {
+  cursor: pointer;
+}
+
+/*=========================header==============================*/
 .header {
   padding: 30px 0;
   border-bottom: 1px solid #eae4e4;
+  position: relative;
 }
+  /*main menu*/
 .header .menu {
   display: none;
+  position: fixed;
+  left: 0;
+  top: 0;
+  background: rgba(101, 91, 91, 0.56);
+  z-index: 1;
+  height: 100vh;
+  width: 100vw;
+  transition: all 0.7s ease-in-out;
+}
+.header .menu .pos_fix {
+  width: 400px;
+  background: #fff;
+}
+.header .menu ul {
+  text-transform: capitalize;
+  padding: 30px;
+}
+.header .menu ul li {
+  margin-top: 20px;
+  font-size: 24px;
+}
+.header .menu ul li:hover {
+  text-decoration: underline;
+}
+.header .menu_inner {
+  overflow: scroll;
+  height: calc(100vh - 50px);
+}
+.header .menu ul.sub_menu {
+  padding: 30px;
+  border-top: 1px solid #e7e6e6;
+}
+.header .menu ul.sub_menu li {
+  font-size: 16px;
+}
+.header .modal .close {
+  padding: 30px;
+  padding-bottom: 0;
+}
+.header .modal .close button {
+  background: none;
+  border: none;
+}
+.header .modal .close button i {
+  margin-right: 8px;
+  font-size: 16px;
+}
+  /*search box*/
+.header .search_page {
+  display: none;
+  position: fixed;
+  top: 0;
+  background-color: #ffffff;
+  width: 100vw;
+  height: 100vh;
+  z-index: 1;
+  transition: all 0.7s ease-in-out;
+}
+.header .search_inner__top {
+  padding: 25px 40px 25px 200px;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid gainsboro;
+}
+.header .search_inner__top .form {
+  width: 65%;
+  position: relative;
+}
+.header .search_inner__top .form input {
+  border: none;
+  width: 100%;
+  padding: 15px;
+  background-color: #F6F5F3;
+  border-radius: 4px;
+  padding-left: 41px;
+}
+.header .search_page .form button {
+  position: absolute;
+  background: none;
+  border: none;
+  font-size: 16px;
+  color: #575656;
+  top: 12px;
+  left: 15px;
+}
+.header .search_inner__top .close button {
+  background: none;
+  border: none;
+  font-size: 20px;
+  color: #464545;
+}
+.header .search_inner__btm {
+  display: flex;
+}
+.header .search_inner__btm .options {
+  display: flex;
+}
+.header .search_inner__btm .options .options_single {
+  width: 50%;
+}
+.header .search_inner__btm__left {
+  padding: 45px 38px;
+  padding-right: 0;
+  border-right: 1px solid gainsboro;
+}
+.header .search_inner__btm .options h3 {
+  font-weight: normal;
+  text-transform: uppercase;
+  font-size: 16px;
+}
+.header .search_inner__btm .options ul li {
+  margin-top: 30px;
+}
+.header .search_inner__btm__left .posts {
+  padding-top: 40px;
+}
+.header .search_inner__btm__left .posts .post {
+  margin-top: 25px;
+  display: flex;
+  gap: 25px;
+}
+.header .search_inner__btm__left .posts h3 {
+  font-weight: normal;
+  font-size: 15px;
+}
+.header .search_inner__btm__left .posts h4 {
+  font-weight: normal;
+  margin-bottom: 5px;
+  text-transform: uppercase;
+  max-width: 400px;
+}
+.header .search_inner__btm__left .posts p {
+  color: #4a4949;
+}
+.header .search_inner__btm__left .posts .post .thumb {
+  width: 30%;
+}
+.header .search_inner__btm__left .posts .post .thumb img {
+  width: 100%;
+}
+.header .search_inner__btm__single {
+  width: 50%;
+}
+.header .search_inner__btm__right {
+  padding: 45px 38px;
+}
+.header .search_inner__btm__right h3 {
+  font-weight: normal;
+  font-size: 17px;
+  margin-bottom: 21px;
+}
+.header .search_inner__btm__right .products {
+  display: flex;
+  flex-wrap: wrap;
+}
+.header .search_inner__btm__right .products .product {
+  width: 48%;
+  display: flex;
+  gap: 25px;
+  align-items: center;
+  margin-bottom: 10px;
+  margin-right: 2%;
+}
+.header .search_inner__btm__right .products .product .thumb {
+  width: 102px;
+  min-width: 102px;
+  background: linear-gradient(to bottom, #d9d6d6, #f4f4f4);
+}
+.header .search_inner__btm__right .products .product .thumb img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.header .search_inner__btm__right .products .product h4 {
+  text-transform: uppercase;
+  font-weight: normal;
+  font-size: 14px;
+}
+
+  /*right side menu*/
+.header .lv {
+  display: none;
+  transition: all 0.7s ease-in-out;
+}
+.header .r_menu {
+  position: fixed;
+  left: 0;
+  top: 0;
+  background: rgba(101, 91, 91, 0.56);
+  z-index: 1;
+  height: 100vh;
+  width: 100vw;
+}
+.header .r_menu .r_menu_inner {
+  width: 459px;
+  background: #fff;
+  position: absolute;
+  right: 0;
+  display: block;
+  overflow: scroll;
+  height: 100vh;
+}
+.header .r_menu .rtp {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 35px;
+  text-transform: uppercase;
+  font-size: 23px;
+  align-items: center;
+  border-bottom: 1px solid gainsboro;
+}
+.header .r_menu .rtp_single:last-of-type {
+  padding: 30px;
+  border-left: 1px solid gainsboro;
+  color: #3c3a3a;
+  padding-bottom: 23px;
+}
+.header .r_menu .rtp_single:last-of-type:hover {
+  cursor: pointer;
+}
+.header .r_menu .lv_body {
+  padding: 38px;
+  border-bottom: 1px solid gainsboro;
+}
+.header .r_menu .lv_body h4, .header .r_menu .lv_btm h4 {
+  text-transform: uppercase;
+  font-size: 17px;
+  font-family: sans-serif;
+}
+.header .r_menu form label {
+  font-size: 15px;
+  margin-top: 25px;
+  display: inline-block;
+  margin-bottom: 8px;
+}
+.header .r_menu form input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid gainsboro;
+}
+.header .r_menu form a {
+  margin-top: 5px;
+  display: inline-block;
+  margin-bottom: 25px;
+}
+.header .r_menu form input[type=submit] {
+  background-color: #000000;
+  color: white;
+  font-size: 15px;
+  font-family: helvetica;
+}
+.header .r_menu form input[type=submit]:hover {
+  cursor: pointer;
+}
+.header .r_menu .lv_btm {
+  padding: 38px;
+}
+.header .r_menu .lv_btm p {
+  margin: 30px 0;
+  font-family: helvetica-light;
+  letter-spacing: 0.3px;
+  color: #1e1e1e;
+}
+.header .r_menu .lv_btm button {
+  width: 100%;
+  padding: 15px;
+  background-color: black;
+  color: white;
+  font-family: helvetica;
+}
+
+  /*filter menu*/
+.header .filter_menu {
+  display: none;
+  transition: all 0.7s ease-in-out;
+}
+.header .filter_menu__mid {
+  padding: 38px;
+}
+.header .filter_menu__mid__top {
+  display: flex;
+  justify-content: space-between;
+  margin: 24px 0;
+  font-size: 20px;
+  font-family: sans-serif;
+}
+.header .filter_menu__mid__btm__row {
+  display: flex;
+  gap: 8px;
+}
+.header .filter_menu__mid__btm__row img {
+  width: 100%;
+}
+.header .filter_menu__mid__btm__row__item {
+  border: 1px solid gainsboro;
+  padding: 8px;
+  margin-bottom: 8px;
+}
+.header .filter_menu__mid__btm__row__item h6 {
+  font-weight: normal;
+}
+.header .filter_body {
+  display: flex;
+  flex-direction: column;
+  height: calc(100vh - 90px);
+  justify-content: space-between;
+}
+.header .filter_menu__btm {
+  padding: 20px 36px;
+  box-shadow: 0px 0px 18px #e1dfdf;
+}
+.header .filter_menu__btm button {
+  background-color: #000000;
+  border: none;
+  width: 100%;
+  padding: 17px;
+  color: white;
+  font-size: 14px;
+}
+.header .filter_menu .filter_menu_inner {
+  width: 550px;
+}
+.header .active {
+  display: block;
 }
 .header__inner {
   display: flex;
@@ -64,6 +395,9 @@ a {
 }
 .header__inner__item ul li {
   font-size: 14px;
+}
+.header__inner__item ul li:hover {
+  cursor: pointer;
 }
 .header__inner__item ul li i {
   margin-right: 10px;
@@ -94,12 +428,21 @@ a {
   border-radius: 25px;
   background: transparent;
   border: 1px solid #bbb9b9;
+  display: flex;
+  align-items: center;
+  gap: 3px;
+}
+.sub_header__inner__right .filter img {
+  width: 16px;
+}
+.sub_header__inner__right .filter:hover {
+  cursor: pointer;
 }
 .sub_header .modal {
   display: none;
 }
 
-/*hero*/
+/*================================hero==================================*/
 .hero {
   background: url("./img/hero.jpg") no-repeat;
   background-size: auto;
@@ -139,6 +482,9 @@ a {
 }
 .products__inner__single:hover .products__inner__single__slider {
   visibility: visible;
+}
+.products__inner__single.hidden{
+  visibility: hidden;
 }
 .products__inner__single {
   flex: 1;
@@ -208,6 +554,11 @@ a {
   height: 100%;
 }
 .products__inner__single__img img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.products__inner__single__img video {
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
